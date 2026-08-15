@@ -785,3 +785,31 @@ textarea.form-control {
     gap: 20px;
   }
 }
+
+/* Untuk Layar Tablet (Lebar maksimum 768px) */
+@media (max-width: 768px) {
+  .container, .navbar, .hero, .content {
+    flex-direction: column; /* Mengubah susunan dari kesamping jadi membujur ke bawah */
+    padding: 15px;
+  }
+
+  img {
+    width: 100%; /* Gambar menyesuaikan lebar layar */
+    height: auto;
+  }
+}
+
+/* Untuk Layar HP (Lebar maksimum 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Memperkecil ukuran judul agar tidak terpotong */
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button, .btn {
+    width: 100%; /* Tombol dibuat memenuhi layar HP */
+  }
+}
