@@ -828,3 +828,24 @@ textarea.form-control {
     width: 100%; /* Tombol dibuat memenuhi layar HP */
   }
 }
+
+/* Khusus untuk tampilan Mobile (HP) */
+@media (max-width: 768px) {
+  /* Ganti '.favorite-container' dengan nama class pembungkus bagian ini */
+  .favorite-container {
+    flex-direction: column-reverse; /* Teks di atas, gambar di bawah */
+    padding: 20px; /* Memberi jarak dari pinggir layar HP */
+  }
+
+  /* Ganti '.favorite-text' dengan nama class pembungkus teksnya */
+  .favorite-text {
+    width: 100%; /* Teks mengambil penuh lebar layar */
+    margin-bottom: 20px; /* Jarak antara teks dan gambar */
+  }
+
+  /* Ganti '.favorite-image' dengan nama class pembungkus gambarnya */
+  .favorite-image img {
+    width: 100%; /* Gambar menyesuaikan lebar layar HP */
+    height: auto; /* Jaga proporsi gambar */
+  }
+}
