@@ -8,13 +8,15 @@
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #fdfbf9;
   color: #2b2b2b;
 }
 
-h1, h2, h3 {
-  font-family: 'Cormorant Garamond', serif;
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
   font-weight: 700;
 }
 
@@ -22,7 +24,7 @@ h1, h2, h3 {
    2. HERO SECTION (CONTAINER LUAR)
    ========================================== */
 .hero {
-  background: url('images/download (63).jpg') no-repeat center 20%/cover;
+  background: url("images/download (63).jpg") no-repeat center 20% / cover;
   min-height: 85vh;
   display: flex;
   align-items: center;
@@ -30,19 +32,26 @@ h1, h2, h3 {
   padding: 40px 20px;
 }
 
-
 /* Background spesifik tiap halaman jika menggunakan gambar hero berbeda */
-.hero-home { background-image: url('images/download (63).jpg'); }
-.hero-about { background-image: url('images/download (60).jpg'); }
-.hero-services { background-image: url('images/WANITA5.jpg'); }
-.hero-collections { background-image: url('images/download (61).jpg'); }
+.hero-home {
+  background-image: url("images/download (63).jpg");
+}
+.hero-about {
+  background-image: url("images/download (60).jpg");
+}
+.hero-services {
+  background-image: url("images/WANITA5.jpg");
+}
+.hero-collections {
+  background-image: url("images/download (61).jpg");
+}
 
 /* ==========================================
    3. KOTAK COKLAT TRANSPARAN (HERO CARD)
    ========================================== */
 .hero-card {
   background: rgba(43, 10, 10, 0.75); /* Warna Maroon Transparan */
-  backdrop-filter: blur(10px);         /* Efek Kaca/Blur */
+  backdrop-filter: blur(10px); /* Efek Kaca/Blur */
   -webkit-backdrop-filter: blur(10px);
   width: 100%;
   max-width: 2100px;
@@ -80,9 +89,9 @@ h1, h2, h3 {
 }
 
 /* Tombol Aktif & Hover pada Navbar */
-.nav-btn.active, 
+.nav-btn.active,
 .nav-btn:hover {
-  background-color: #3B0B0B;
+  background-color: #3b0b0b;
   color: #ffffff;
 }
 
@@ -111,13 +120,15 @@ h1, h2, h3 {
 
 .btn-primary {
   background-color: #ffffff;
-  color: #3B0B0B;
+  color: #3b0b0b;
   padding: 12px 32px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .btn-primary:hover {
@@ -127,7 +138,7 @@ h1, h2, h3 {
 
 .btn-arrow {
   background-color: #ffffff;
-  color: #3B0B0B;
+  color: #3b0b0b;
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -136,7 +147,9 @@ h1, h2, h3 {
   justify-content: center;
   text-decoration: none;
   font-size: 18px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .btn-arrow:hover {
@@ -162,7 +175,7 @@ h1, h2, h3 {
 
 .btn-dark {
   display: inline-block;
-  background-color: #3B0B0B;
+  background-color: #3b0b0b;
   color: #ffffff;
   padding: 12px 32px;
   border-radius: 30px;
@@ -179,7 +192,7 @@ h1, h2, h3 {
 .btn-light {
   display: inline-block;
   background-color: #ffffff;
-  color: #3B0B0B;
+  color: #3b0b0b;
   padding: 12px 32px;
   border-radius: 30px;
   text-decoration: none;
@@ -206,7 +219,7 @@ h1, h2, h3 {
   align-items: center;
 }
 
-.refinement-img-left img, 
+.refinement-img-left img,
 .refinement-img-right img {
   width: 100%;
   border-radius: 20px;
@@ -230,7 +243,7 @@ h1, h2, h3 {
    8. SECTION 3: FAVORITE COLLECTIONS (INDEX)
    ========================================== */
 .section-favorite {
-  background-color: #3B0B0B;
+  background-color: #3b0b0b;
   color: #ffffff;
   padding: 80px 0;
 }
@@ -252,7 +265,7 @@ h1, h2, h3 {
   border-radius: 12px;
   border: 4px solid #ffffff;
   object-fit: cover;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .main-img {
@@ -344,7 +357,7 @@ h1, h2, h3 {
 .title-line {
   flex: 1;
   height: 2px;
-  background-color: #3B0B0B;
+  background-color: #3b0b0b;
   max-width: 250px;
 }
 
@@ -364,7 +377,7 @@ h1, h2, h3 {
 .founders-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Membagi 2 kolom sama besar */
-  align-items: center;            /* Membuat teks & gambar sejajar di tengah secara vertikal */
+  align-items: center; /* Membuat teks & gambar sejajar di tengah secara vertikal */
   gap: 40px;
   margin: 60px 0 80px 0;
 }
@@ -376,7 +389,7 @@ h1, h2, h3 {
 }
 
 .founders-text h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 38px;
   font-weight: 600;
   color: #2b2b2b;
@@ -391,16 +404,14 @@ h1, h2, h3 {
 }
 
 .founders-img {
-  width: 100%;
-  height: 380px;          /* KUNCI TINGGI GAMBAR DI 380PX AGAR TIDAK MEMANJANG */
-  border-radius: 24px;   /* Lengkungan sudut yang halus */
-  overflow: hidden;
+  object-fit: cover;
+  object-position: 50% 20%; /* 50% horizontal (tengah), 20% dari atas */
 }
 
 .founders-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* Memotong gambar dengan presisi tanpa bikin gepeng */
+  object-fit: cover; /* Memotong gambar dengan presisi tanpa bikin gepeng */
   object-position: center top; /* Fokus ke bagian wajah/atas model */
   display: block;
 }
@@ -420,7 +431,7 @@ h1, h2, h3 {
 }
 
 .weblounge-card {
-  background-color: #3B0B0B;
+  background-color: #3b0b0b;
   color: #ffffff;
   border-radius: 24px;
   overflow: hidden;
@@ -463,7 +474,7 @@ h1, h2, h3 {
 }
 
 .form-group label {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 22px;
   font-weight: 700;
   color: #2b2b2b;
@@ -472,7 +483,7 @@ h1, h2, h3 {
 .form-control {
   width: 100%;
   padding: 14px 20px;
-  border: 2px solid #3B0B0B;
+  border: 2px solid #3b0b0b;
   border-radius: 16px;
   background: transparent;
   font-family: inherit;
@@ -486,7 +497,7 @@ textarea.form-control {
 }
 
 .stay-touch-banner {
-  background-color: #3B0B0B;
+  background-color: #3b0b0b;
   border-radius: 24px;
   overflow: hidden;
   display: grid;
@@ -520,7 +531,7 @@ textarea.form-control {
 }
 
 .stay-touch-info h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 30px !important;
   font-weight: 600;
   color: #ffffff !important;
@@ -548,7 +559,7 @@ textarea.form-control {
   width: 100%;
   height: 100% !important;
   object-fit: cover !important; /* Memaksa gambar pas di tinggi 260px */
-  object-position: center 20%;  /* Menyesuaikan posisi fokus foto */
+  object-position: center 20%; /* Menyesuaikan posisi fokus foto */
   display: block;
 }
 
@@ -606,7 +617,7 @@ textarea.form-control {
 }
 
 .product-card-item h3 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #2b2b2b;
@@ -646,7 +657,7 @@ textarea.form-control {
 }
 
 .banner-left-dark h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 32px !important;
   font-weight: 600;
   color: #ffffff !important;
@@ -673,7 +684,7 @@ textarea.form-control {
   width: 100%;
   height: 100% !important;
   object-fit: cover !important; /* Gambar otomatis memotong rapi */
-  object-position: center 20%;  /* Posisi fokus gambar */
+  object-position: center 20%; /* Posisi fokus gambar */
   display: block;
 }
 
@@ -751,10 +762,10 @@ textarea.form-control {
     margin-bottom: 30px;
   }
 
-  .about-grid, 
-  .founders-grid, 
-  .contact-layout, 
-  .stay-touch-banner, 
+  .about-grid,
+  .founders-grid,
+  .contact-layout,
+  .stay-touch-banner,
   .collections-favorite-banner {
     grid-template-columns: 1fr;
   }
@@ -763,8 +774,8 @@ textarea.form-control {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .catalog-row-top, 
-  .catalog-row-bottom, 
+  .catalog-row-top,
+  .catalog-row-bottom,
   .services-three-cols {
     grid-template-columns: 1fr;
   }
