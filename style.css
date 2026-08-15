@@ -692,31 +692,40 @@ textarea.form-control {
    12. FOOTER
    ========================================== */
 .footer {
-  background-color: #a3938b;
-  color: #ffffff;
-  padding: 60px 0 40px 0;
-  font-size: 13px;
+  width: 100vw; /* Memaksa background cokelat memenuhi 100% lebar layar */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #9c8983; /* Warna cokelat footer */
+  padding: 50px 0;
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-  gap: 30px;
+  max-width: 1400px; /* Menjaga posisi teks tetap rapi */
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
 }
 
 .footer-col h3 {
   font-size: 24px;
   margin-bottom: 12px;
+  color: #ffffff;
 }
 
 .footer-col h4 {
   font-size: 15px;
   margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .footer-col a {
   display: block;
-  color: #e0e0e0;
+  color: #ffffff;
   text-decoration: none;
   margin-bottom: 8px;
   transition: 0.2s;
@@ -788,7 +797,10 @@ textarea.form-control {
 
 /* Untuk Layar Tablet (Lebar maksimum 768px) */
 @media (max-width: 768px) {
-  .container, .navbar, .hero, .content {
+  .container,
+  .navbar,
+  .hero,
+  .content {
     flex-direction: column; /* Mengubah susunan dari kesamping jadi membujur ke bawah */
     padding: 15px;
   }
@@ -809,7 +821,8 @@ textarea.form-control {
     font-size: 14px;
   }
 
-  button, .btn {
+  button,
+  .btn {
     width: 100%; /* Tombol dibuat memenuhi layar HP */
   }
 }
