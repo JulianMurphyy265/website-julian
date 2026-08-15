@@ -800,9 +800,11 @@ textarea.form-control {
   .container,
   .navbar,
   .hero,
-  .content {
-    flex-direction: column; /* Mengubah susunan dari kesamping jadi membujur ke bawah */
+  .content,
+  .footer-grid {
+    flex-direction: column;
     padding: 15px;
+    gap: 25px;
   }
 
   img {
